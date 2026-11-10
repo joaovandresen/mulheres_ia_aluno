@@ -1,2 +1,2 @@
-# mulheres_ia_aluno
-Site referente a mulheres na tecnologia.
+# mulheres_tecnologia
+Site para ser finalizado pelos estudantes. 
