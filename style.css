@@ -88,6 +88,8 @@ h1, h2, h3, .badge-tech, .card-tag, .slogan-destaque, .highlight-tag, .theme-tog
     position: relative;
     z-index: 50;
     backdrop-filter: blur(12px);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 7%, black 93%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0%, black 7%, black 93%, transparent 100%);
 }
 
 .adboard-track {
@@ -197,6 +199,7 @@ h1, h2, h3, .badge-tech, .card-tag, .slogan-destaque, .highlight-tag, .theme-tog
     letter-spacing: -0.03em;
     background: linear-gradient(135deg, var(--text-main) 35%, var(--accent-cyan));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 0.5rem;
     line-height: 1.1;
@@ -207,6 +210,7 @@ h1, h2, h3, .badge-tech, .card-tag, .slogan-destaque, .highlight-tag, .theme-tog
     font-weight: 700;
     background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 1rem;
 }
@@ -251,6 +255,7 @@ h1, h2, h3, .badge-tech, .card-tag, .slogan-destaque, .highlight-tag, .theme-tog
     font-weight: 800;
     background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 0.2rem;
 }
@@ -299,6 +304,7 @@ h1, h2, h3, .badge-tech, .card-tag, .slogan-destaque, .highlight-tag, .theme-tog
     padding: 1.5px;
     background: radial-gradient(450px circle at var(--mouse-x) var(--mouse-y), var(--accent-cyan), transparent 45%);
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
     opacity: 0;
@@ -596,7 +602,7 @@ h1, h2, h3, .badge-tech, .card-tag, .slogan-destaque, .highlight-tag, .theme-tog
     line-height: 1.55;
 }
 
-/* BIOGRAFIAS & CITAÇÃO COM BOTÃO COPIAR */
+/* BIOGRAFIAS */
 .cabecalho-interno {
     max-width: 850px;
     margin: 0 auto;
