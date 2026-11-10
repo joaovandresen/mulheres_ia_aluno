@@ -54,55 +54,87 @@
     </header>
     
     <main class="conteudo-principal">
+
+        <!-- BLOCO DE ESTATÍSTICAS DE IMPACTO -->
+        <section class="secao-impacto reveal">
+            <div class="impacto-grid">
+                <div class="impacto-card">
+                    <span class="impacto-numero">+180 Anos</span>
+                    <span class="impacto-rotulo">De História Documentada</span>
+                </div>
+                <div class="impacto-card">
+                    <span class="impacto-numero">4 Grandes</span>
+                    <span class="impacto-rotulo">Marcos da Computação</span>
+                </div>
+                <div class="impacto-card">
+                    <span class="impacto-numero">100%</span>
+                    <span class="impacto-rotulo">Pioneirismo Feminino</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- CARDS DE NAVEGAÇÃO COM BOTÃO PRÉVIA -->
         <nav class="menu reveal">
             <ul class="cards-grid">
                 <li>
-                    <a href="ada.html" class="card glow-card">
+                    <div class="card glow-card">
                         <div class="card-header">
                             <span class="card-tag">Algoritmos</span>
+                            <button class="btn-previa" data-modal="modal-ada">Prévia</button>
+                        </div>
+                        <a href="ada.html" class="card-link">
+                            <div class="card-body">
+                                <h2>Ada Lovelace</h2>
+                                <p>Primeira programadora da história da humanidade.</p>
+                            </div>
                             <span class="card-arrow">&nearr;</span>
-                        </div>
-                        <div class="card-body">
-                            <h2>Ada Lovelace</h2>
-                            <p>Primeira programadora da história da humanidade.</p>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </li>
                 <li>
-                    <a href="grace.html" class="card glow-card">
+                    <div class="card glow-card">
                         <div class="card-header">
                             <span class="card-tag">Compiladores</span>
+                            <button class="btn-previa" data-modal="modal-grace">Prévia</button>
+                        </div>
+                        <a href="grace.html" class="card-link">
+                            <div class="card-body">
+                                <h2>Grace Hopper</h2>
+                                <p>Criadora do primeiro compilador e da linguagem COBOL.</p>
+                            </div>
                             <span class="card-arrow">&nearr;</span>
-                        </div>
-                        <div class="card-body">
-                            <h2>Grace Hopper</h2>
-                            <p>Criadora do primeiro compilador e da linguagem COBOL.</p>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </li>
                 <li>
-                    <a href="margareth.html" class="card glow-card">
+                    <div class="card glow-card">
                         <div class="card-header">
                             <span class="card-tag">Engenharia de Software</span>
+                            <button class="btn-previa" data-modal="modal-margaret">Prévia</button>
+                        </div>
+                        <a href="margareth.html" class="card-link">
+                            <div class="card-body">
+                                <h2>Margaret Hamilton</h2>
+                                <p>Diretora de software da missão espacial Apollo 11.</p>
+                            </div>
                             <span class="card-arrow">&nearr;</span>
-                        </div>
-                        <div class="card-body">
-                            <h2>Margaret Hamilton</h2>
-                            <p>Diretora de software da missão espacial Apollo 11.</p>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </li>
                 <li>
-                    <a href="dorothy.html" class="card glow-card">
+                    <div class="card glow-card">
                         <div class="card-header">
                             <span class="card-tag">FORTRAN & NASA</span>
+                            <button class="btn-previa" data-modal="modal-dorothy">Prévia</button>
+                        </div>
+                        <a href="dorothy.html" class="card-link">
+                            <div class="card-body">
+                                <h2>Dorothy Vaughan</h2>
+                                <p>Matemática e primeira supervisora afro-americana da NASA.</p>
+                            </div>
                             <span class="card-arrow">&nearr;</span>
-                        </div>
-                        <div class="card-body">
-                            <h2>Dorothy Vaughan</h2>
-                            <p>Matemática e primeira supervisora afro-americana da NASA.</p>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </li>
             </ul>
         </nav>
@@ -154,6 +186,67 @@
             </div>
         </section>
     </main>
+
+    <!-- MODAIS DE VISUALIZAÇÃO RÁPIDA -->
+    <div id="modal-ada" class="modal-overlay">
+        <div class="modal-box">
+            <button class="btn-fechar-modal">&times;</button>
+            <span class="badge-tech">Prévia Rápida</span>
+            <h2>Ada Lovelace</h2>
+            <p class="modal-subtitulo">Matemática e Condessa de Lovelace</p>
+            <ul class="modal-lista">
+                <li>Escreveu o primeiro algoritmo da história em 1843.</li>
+                <li>Previu que computadores processariam arte, som e gráficos.</li>
+                <li>Inspirou a criação da linguagem de programação ADA.</li>
+            </ul>
+            <a href="ada.html" class="btn-modal-acao">Ver Biografia Completa</a>
+        </div>
+    </div>
+
+    <div id="modal-grace" class="modal-overlay">
+        <div class="modal-box">
+            <button class="btn-fechar-modal">&times;</button>
+            <span class="badge-tech">Prévia Rápida</span>
+            <h2>Grace Hopper</h2>
+            <p class="modal-subtitulo">Contra-Almirante da Marinha dos EUA</p>
+            <ul class="modal-lista">
+                <li>Desenvolveu o primeiro compilador da história (A-0).</li>
+                <li>Criou a linguagem Flow-Matic, base do lendário COBOL.</li>
+                <li>Popularizou o termo técnico "bug" na computação.</li>
+            </ul>
+            <a href="grace.html" class="btn-modal-acao">Ver Biografia Completa</a>
+        </div>
+    </div>
+
+    <div id="modal-margaret" class="modal-overlay">
+        <div class="modal-box">
+            <button class="btn-fechar-modal">&times;</button>
+            <span class="badge-tech">Prévia Rápida</span>
+            <h2>Margaret Hamilton</h2>
+            <p class="modal-subtitulo">Diretora de Software do Programa Apollo</p>
+            <ul class="modal-lista">
+                <li>Cunhou o termo "Engenharia de Software".</li>
+                <li>Desenvolveu o software que salvou o pouso lunar da Apollo 11.</li>
+                <li>Condecorada com a Medalha Presidencial da Liberdade.</li>
+            </ul>
+            <a href="margareth.html" class="btn-modal-acao">Ver Biografia Completa</a>
+        </div>
+    </div>
+
+    <div id="modal-dorothy" class="modal-overlay">
+        <div class="modal-box">
+            <button class="btn-fechar-modal">&times;</button>
+            <span class="badge-tech">Prévia Rápida</span>
+            <h2>Dorothy Vaughan</h2>
+            <p class="modal-subtitulo">Primeira Supervisora Negra da NASA</p>
+            <ul class="modal-lista">
+                <li>Chefiou a divisão West Area Computing na NACA/NASA.</li>
+                <li>Liderou a transição da equipe para a linguagem FORTRAN.</li>
+                <li>Homenageada no filme "Estrelas Além do Tempo".</li>
+            </ul>
+            <a href="dorothy.html" class="btn-modal-acao">Ver Biografia Completa</a>
+        </div>
+    </div>
 
     <footer>
         <div class="footer-content">

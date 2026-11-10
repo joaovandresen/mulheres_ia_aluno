@@ -69,4 +69,57 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { threshold: 0.12 });
 
     revealElements.forEach(el => observer.observe(el));
+
+    // 5. MODAL DE VISUALIZAÇÃO RÁPIDA (PRÉVIA)
+    const btnPrevias = document.querySelectorAll('.btn-previa');
+    const btnFecharModais = document.querySelectorAll('.btn-fechar-modal');
+    const modalOverlays = document.querySelectorAll('.modal-overlay');
+
+    btnPrevias.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const modalId = btn.getAttribute('data-modal');
+            const targetModal = document.getElementById(modalId);
+            if (targetModal) {
+                targetModal.classList.add('active');
+            }
+        });
+    });
+
+    btnFecharModais.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const modal = btn.closest('.modal-overlay');
+            if (modal) modal.classList.remove('active');
+        });
+    });
+
+    modalOverlays.forEach(overlay => {
+        overlay.addEventListener('click', (e) => {
+            if (e.target === overlay) {
+                overlay.classList.remove('active');
+            }
+        });
+    });
+
+    // 6. BOTÃO DE COPIAR CITAÇÃO
+    const btnCopiar = document.querySelector('.btn-copiar-citacao');
+    if (btnCopiar) {
+        btnCopiar.addEventListener('click', () => {
+            const textoCitacao = document.getElementById('texto-citacao');
+            const autor = document.querySelector('.citacao cite');
+            
+            if (textoCitacao && autor) {
+                const textoCompleto = `${textoCitacao.textContent} ${autor.textContent}`;
+                navigator.clipboard.writeText(textoCompleto).then(() => {
+                    const textoOriginal = btnCopiar.textContent;
+                    btnCopiar.textContent = 'Copiado!';
+                    btnCopiar.style.borderColor = 'var(--accent-cyan)';
+                    
+                    setTimeout(() => {
+                        btnCopiar.textContent = textoOriginal;
+                    }, 2000);
+                });
+            }
+        });
+    }
 });
