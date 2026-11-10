@@ -1,22 +1,88 @@
 <!DOCTYPE html>
-<html lang="">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style.css">
-        <title> Ada Augusta King - Ada Lovelace </title>
-    </head>
+<html lang="pt-br">
 
-    <body>
-        <header class="cabecalho">
-            <h1 id="titulo"> Ada Augusta King </h1>
-        </header>
-      
-        <img src="img/foto-ada01.png" alt="Ada Lovelace" class="imgcentro">
-        <p> Ada Augusta King, Condessa de Lovelace (Byron, 1815 - 1852), foi uma matemática e escritora inglesa. Ela foi a primeira a reconhecer que máquinas poderiam ter aplicações além de puro calculos e criou primeiro algoritmo para ser processado por uma máquina, a máquina analítica de Charles Babbage.</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ada Lovelace - Mulheres na Tecnologia</title>
+    <!-- Fontes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+</head>
 
-        <p> Durante o período em que esteve envolvida com o projeto de Babbage, ela desenvolveu os algoritmos que permitiriam a máquina computar <br> os valores de funções matemáticas, além de publicar uma coleção de notas sobre a máquina analítica.</p> 
+<body>
 
-        <p> Por esse trabalho é considerada a primeira programadora de computadores de toda a história. Vale lembrar que ela escreveu o programa em um papel, com as instruções de como programar a máquina analítica, que nunca chegou a ser construída em seu tempo de vida. A Ada é até mesmo uma referência da cultura pop.<br> </p>
+    <!-- BARRA DE PROGRESSO DE LEITURA -->
+    <div id="scroll-progress" class="scroll-progress-bar"></div>
+
+    <!-- BOTÃO ALTERNADOR DE TEMA -->
+    <button id="theme-toggle" class="theme-toggle-btn" aria-label="Alternar Tema">
+        <span class="theme-text">MODO CLARO</span>
+    </button>
+
+    <header class="cabecalho-interno">
+        <a href="index.html" class="btn-voltar">&larr; Voltar ao início</a>
+    </header>
+
+    <main class="pagina-biografia">
+        <article class="bio-card reveal">
+            
+            <header class="bio-header">
+                <span class="badge-tech">Pioneira dos Algoritmos</span>
+                <h1 class="bio-titulo">Ada Augusta King</h1>
+                <p class="bio-subtitulo">Condessa de Lovelace (1815 – 1852)</p>
+            </header>
+            
+            <!-- Imagem Perfeitamente Centralizada -->
+            <div class="bio-imagem-wrapper">
+                <img src="img/foto-ada01.png" alt="Ada Lovelace" class="imgcentro">
+            </div>
+
+            <!-- Destaques Rápidos -->
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">1º</span>
+                    <span class="stat-label">Algoritmo da História</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">1843</span>
+                    <span class="stat-label">Ano de Publicação</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">ADA</span>
+                    <span class="stat-label">Linguagem em sua homenagem</span>
+                </div>
+            </div>
+
+            <section class="bio-texto">
+                <h2>Biografia e Legado</h2>
+                <p>Ada Augusta King, Condessa de Lovelace (nascida Byron), foi uma brilhante matemática e escritora inglesa. Ela é reconhecida universalmente como a <strong>primeira programadora de computadores da história</strong>, tendo enxergado o potencial das máquinas muito além dos meros cálculos numéricos em uma época em que o computador nem sequer existia fisicamente.</p>
+
+                <h2>A Máquina Analítica e o Primeiro Código</h2>
+                <p>Durante sua colaboração com o cientista Charles Babbage, Ada trabalhou no projeto da <em>Máquina Analítica</em>. Ao traduzir um artigo sobre o engenho, ela adicionou uma extensa coleção de notas pessoais. Em uma dessas notas, desenvolveu um algoritmo detalhado para que a máquina calculasse os números de Bernoulli. Esse texto é considerado o primeiro programa de computador já escrito.</p>
+
+                <h2>Visão Futurista</h2>
+                <p>Enquanto Babbage focava apenas na capacidade computacional de calcular números, Ada previu que as máquinas poderiam processar símbolos, compor músicas complexas, manipular gráficos e transformar a sociedade. Suas ideias visionárias inspiraram gerações de cientistas, incluindo Alan Turing no século XX.</p>
+
+                <blockquote class="citacao">
+                    "A Máquina Analítica tece padrões algébricos assim como o tear de Jacquard tece flores e folhas."
+                    <cite>— Ada Lovelace</cite>
+                </blockquote>
+            </section>
+
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p><strong>Desenvolvido por:</strong> João Victor</p>
+            <p><strong>Contato:</strong> joaovictor@gmail.com | (43) 9959-9769</p>
+            <p class="local">Manoel Ribas - Paraná</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>

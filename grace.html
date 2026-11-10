@@ -1,23 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <title> Grace Murray Hopper </title>
+    <title>Grace Hopper - Mulheres na Tecnologia</title>
+    <!-- Fontes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
 </head>
+
 <body>
-    <header>
-        <h1 id="titulo"> Grace Murray Hopper </h1>
+
+    <!-- BARRA DE PROGRESSO DE LEITURA -->
+    <div id="scroll-progress" class="scroll-progress-bar"></div>
+
+    <!-- BOTÃO ALTERNADOR DE TEMA -->
+    <button id="theme-toggle" class="theme-toggle-btn" aria-label="Alternar Tema">
+        <span class="theme-text">MODO CLARO</span>
+    </button>
+
+    <header class="cabecalho-interno">
+        <a href="index.html" class="btn-voltar">&larr; Voltar ao início</a>
     </header>
-    
-    <img src="img/grace.jpg" alt="Foto de Dorothy Johnson Vaughan" class="imgcentro">
-    
-    <p class="texto"> Grace Murray Hopper (Nova Iorque, 1906 - 1992) foi Ph.D. em Matemática, analista de sistemas da Marinha dos Estados Unidos nas décadas de 1940 e 1950 e almirante.</p>
 
-    <p> Foi ela quem criou a linguagem de programação Flow-Matic (hoje extinta) que serviu como base para a criação da linguagem COBOL (Common Business Oriented Language) devido a necessidade de criar uma linguagem orientada para negócios comuns. Pois é! Essa linguagem que domina muitas áreas dos grandes bancos tem uma mulher com papel de protagonista.</p>
+    <main class="pagina-biografia">
+        <article class="bio-card reveal">
+            
+            <header class="bio-header">
+                <span class="badge-tech">Mãe dos Compiladores</span>
+                <h1 class="bio-titulo">Grace Murray Hopper</h1>
+                <p class="bio-subtitulo">Almirante da Marinha dos EUA & Cientista da Computação (1906 – 1992)</p>
+            </header>
+            
+            <!-- Imagem Perfeitamente Centralizada -->
+            <div class="bio-imagem-wrapper">
+                <img src="img/grace.jpg" alt="Grace Hopper" class="imgcentro">
+            </div>
 
-    <p class="texto">No começo dos anos 1950 ela desenvolveu um compilador operacional, naquela época acreditava-se que computadores só podiam realizar operações aritméticas. Depois como diretora de programação automática, seu departamento divulgou algumas das primeiras linguagens de programação baseadas em compilador. Isso mesmo: considerada uma das mães dos compiladores. </p>
+            <!-- Destaques Rápidos -->
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">COBOL</span>
+                    <span class="stat-label">Baseada no Flow-Matic</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">A-0</span>
+                    <span class="stat-label">Primeiro Compilador (1952)</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">Bug</span>
+                    <span class="stat-label">Popularizou o termo técnico</span>
+                </div>
+            </div>
+
+            <section class="bio-texto">
+                <h2>Biografia e Carreira Militar</h2>
+                <p>Grace Murray Hopper foi PhD em Matemática pela Universidade Yale e alcançou o posto de Contra-Almirante na Marinha dos Estados Unidos. Pioneira na computação das décadas de 1940 e 1950, ela ajudou a programar o Harvard Mark I durante a Segunda Guerra Mundial e dedicou a vida a tornar a programação acessível.</p>
+
+                <h2>A Invenção do Compilador e o COBOL</h2>
+                <p>No início dos anos 1950, Grace desafiou a crença dominante de que computadores só serviam para contas matemáticas. Ela desenvolveu o primeiro compilador da história (o A-0), que traduzia linguagem humana para código de máquina. Mais tarde, criou a linguagem <strong>Flow-Matic</strong>, que serviu de base principal para o nascimento do <strong>COBOL</strong>, linguagem corporativa utilizada em sistemas bancários ao redor do mundo até os dias de hoje.</p>
+
+                <h2>O Primeiro "Bug" de Computador</h2>
+                <p>Ficou famosa também por popularizar o termo <em>"debugging"</em> ao encontrar uma mariposa real presa nos relés do computador Mark II, colando o inseto no diário de bordo com a anotação: "Primeiro caso real de bug encontrado".</p>
+
+                <blockquote class="citacao">
+                    "É mais fácil pedir perdão do que pedir permissão."
+                    <cite>— Grace Hopper</cite>
+                </blockquote>
+            </section>
+
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p><strong>Desenvolvido por:</strong> João Victor</p>
+            <p><strong>Contato:</strong> joaovictor@gmail.com | (43) 9959-9769</p>
+            <p class="local">Manoel Ribas - Paraná</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

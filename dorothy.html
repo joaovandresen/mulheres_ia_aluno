@@ -1,25 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <title> Dorothy Johnson Vaughan </title>
+    <title>Dorothy Vaughan - Mulheres na Tecnologia</title>
+    <!-- Fontes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
 </head>
+
 <body>
-    <header>
-        <h1 id="titulo"> Dorothy Johnson Vaughan </h1>
+
+    <!-- BARRA DE PROGRESSO DE LEITURA -->
+    <div id="scroll-progress" class="scroll-progress-bar"></div>
+
+    <!-- BOTÃO ALTERNADOR DE TEMA -->
+    <button id="theme-toggle" class="theme-toggle-btn" aria-label="Alternar Tema">
+        <span class="theme-text">MODO CLARO</span>
+    </button>
+
+    <header class="cabecalho-interno">
+        <a href="index.html" class="btn-voltar">&larr; Voltar ao início</a>
     </header>
-    
-    <img src="img/Dorothy-Vaughan.jpg" alt="Foto de Dorothy Johnson Vaughan" class="imgcentro">
 
-    <p>Dorothy Johnson Vaughan, nascida em Kansas City, 1910, foi matemática graduada pela Wilberforce University.</p>
+    <main class="pagina-biografia">
+        <article class="bio-card reveal">
+            
+            <header class="bio-header">
+                <span class="badge-tech">Líder & Expert em FORTRAN</span>
+                <h1 class="bio-titulo">Dorothy Johnson Vaughan</h1>
+                <p class="bio-subtitulo">Matemática e Primeira Supervisora Afro-Americana da NASA (1910 – 2008)</p>
+            </header>
+            
+            <!-- Imagem Perfeitamente Centralizada -->
+            <div class="bio-imagem-wrapper">
+                <img src="img/Dorothy-Vaughan.jpg" alt="Dorothy Vaughan" class="imgcentro">
+            </div>
 
-    <p> Durante seus 28 anos de carreira na NASA, foi chefe de um grupo de trabalho formado apenas por mulheres negras e matemáticas, e tornou-se a primeira  supervisora negra.</p>
-        
-    <p>Autodidata, especializou-se na linguagem de programação FORTRAN, e por isto liderou a seção de programação da Divisão de Análise e Computação do Langley  Research Center. Não é coisa pouca! Quem nunca sonhou em ser programadora na NASA? A Dorothy realizou essa tarefa e participou de projetos muito importantes.</p>
-        
-    <p>Além disso, ela também é uma das mulheres destacada na história Estrelas Além  do Tempo (Hidden Figures) que foi lançado nos cinemas.</p>
+            <!-- Destaques Rápidos -->
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">28 Anos</span>
+                    <span class="stat-label">Carreira na NACA / NASA</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">1ª</span>
+                    <span class="stat-label">Supervisora Negra da NASA</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">FORTRAN</span>
+                    <span class="stat-label">Pioneira em Programação</span>
+                </div>
+            </div>
+
+            <section class="bio-texto">
+                <h2>Liderança e Quebra de Barreiras</h2>
+                <p>Dorothy Johnson Vaughan foi uma distinta matemática formada pela Wilberforce University. Ela ingressou no Langley Memorial Aeronautical Laboratory (NACA, posterior NASA) em 1943. Em 1949, tornou-se a <strong>primeira mulher afro-americana a ser promovida a supervisora na agência</strong>, chefiando a unidade <em>West Area Computing</em>, composta por brilhantes matemáticas negras.</p>
+
+                <h2>Visão Tecnológica e Transição para a Era Digital</h2>
+                <p>Quando a NASA começou a introduzir os primeiros computadores eletrônicos mainframe da IBM na década de 1960, Dorothy percebeu rapidamente que o trabalho de cálculo manual seria automatizado. De forma totalmente autodidata, aprendeu a linguagem de programação <strong>FORTRAN</strong> e ensinou suas subordinadas.</p>
+
+                <h2>Contribuição para a Corrida Espacial</h2>
+                <p>Graças ao seu espírito de liderança e antecipação tecnológica, sua equipe assumiu a Seção de Programação da Divisão de Análise e Computação de Langley. As contribuições do seu grupo foram cruciais para os programas espaciais Scout e Mercury, incluindo o voo orbital histórico do astronauta John Glenn. Sua jornada foi retratada no aclamado filme e livro <em>Estrelas Além do Tempo (Hidden Figures)</em>.</p>
+
+                <blockquote class="citacao">
+                    "Mudei o que pude, e o que não pude, eu suportei."
+                    <cite>— Dorothy Vaughan</cite>
+                </blockquote>
+            </section>
+
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p><strong>Desenvolvido por:</strong> João Victor</p>
+            <p><strong>Contato:</strong> joaovictor@gmail.com | (43) 9959-9769</p>
+            <p class="local">Manoel Ribas - Paraná</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

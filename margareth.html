@@ -1,27 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <title> Margareth Heafield Hamilton </title>
+    <title>Margaret Hamilton - Mulheres na Tecnologia</title>
+    <!-- Fontes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
 </head>
+
 <body>
-    <header> 
-        <h1 id="titulo">  Margaret Heafield Hamilton </h1>
+
+    <!-- BARRA DE PROGRESSO DE LEITURA -->
+    <div id="scroll-progress" class="scroll-progress-bar"></div>
+
+    <!-- BOTÃO ALTERNADOR DE TEMA -->
+    <button id="theme-toggle" class="theme-toggle-btn" aria-label="Alternar Tema">
+        <span class="theme-text">MODO CLARO</span>
+    </button>
+
+    <header class="cabecalho-interno">
+        <a href="index.html" class="btn-voltar">&larr; Voltar ao início</a>
     </header>
 
-    <img src="img/margaret.jpg" alt="Margaret Heafield Hamilton" class="imgcentro">
-
-    <p class="texto"> Margaret Heafield Hamilton (Paoli, 1936) é matemática, cientista da computação, engenheira de software e empresária.</p> 
-
-    <p>Foi diretora da Divisão de Software no Laboratório de Instrumentação do MIT, que  desenvolveu o programa de voo usado no projeto Apollo 11, software que impediu que  o pouso na Lua fosse abortado por falha humana. Você entendeu bem: sem o programa que ela escreveu, nada de "pequeno passo para o homem, grande passo para a humanidade". Foi um grande passo para as mulheres também. </p> 
-
-    <p class="texto"> Em 1986 ela fundou sua própria empresa, a Hamilton Technologies Inc com sede em Cambridge. Onde desenvolveu seu paradigma para Sistemas e  Design de Software, o Development Before the Fact. </p>
-
-    <p> Além de ser creditada por ter criado o termo "engenharia de software", foi uma  das desenvolvedoras dos conceitos de computação paralela, priority scheduling, teste de sistema, e capacidade de decisão com integração humana, tais como mostradores de prioridade que viriam a ser o fundamento do design de software ultra confiável. </p>
+    <main class="pagina-biografia">
+        <article class="bio-card reveal">
             
-    <p> Foi premiada com a Medalha Presidencial da Liberdade pelo presidente dos EUA Barack Obama, maior honra a um civil daquele país. </p>
+            <header class="bio-header">
+                <span class="badge-tech">Engenharia de Software</span>
+                <h1 class="bio-titulo">Margaret Heafield Hamilton</h1>
+                <p class="bio-subtitulo">Diretora de Software do Programa Apollo (1936 – presente)</p>
+            </header>
+            
+            <!-- Imagem Perfeitamente Centralizada -->
+            <div class="bio-imagem-wrapper">
+                <img src="img/margaret.jpg" alt="Margaret Hamilton" class="imgcentro">
+            </div>
+
+            <!-- Destaques Rápidos -->
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">Apollo 11</span>
+                    <span class="stat-label">Software de Voo Espacial</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">Pioneira</span>
+                    <span class="stat-label">Cunhou o termo Engenharia de Software</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">2016</span>
+                    <span class="stat-label">Medalha Presidencial da Liberdade</span>
+                </div>
+            </div>
+
+            <section class="bio-texto">
+                <h2>Liderança no Projeto Apollo 11</h2>
+                <p>Margaret Hamilton é matemática, cientista da computação e empresária norte-americana. Como diretora da Divisão de Engenharia de Software do Laboratório de Instrumentação do MIT, liderou a equipe que criou o programa de computador embarcado nas missões Apollo da NASA.</p>
+
+                <h2>Salvando o Pouso na Lua</h2>
+                <p>Minutos antes de o módulo lunar da Apollo 11 pousar na Lua em 1969, os alarmes da espaçonave dispararam devido a uma sobrecarga de dados no radar. O software ultra-confiável desenvolvido por Margaret priorizou automaticamente as tarefas vitais de navegação, ignorando processos secundários. Isso evitou que a missão fosse abortada e garantiu o histórico pouso do homem na Lua.</p>
+
+                <h2>Criadora de um Conceito Fundamental</h2>
+                <p>Margaret é a responsável por cunhar o próprio termo <strong>"Engenharia de Software"</strong>, lutando para que a disciplina obtivesse o mesmo respeito acadêmico e técnico das engenhiarias tradicionais. Ela também foi pioneira em computação paralela e agendamento por prioridade. Por suas contribuições, recebeu a Medalha Presidencial da Liberdade do presidente Barack Obama em 2016.</p>
+
+                <blockquote class="citacao">
+                    "Não havia escolha a não ser ser pioneira. Não existia escola para o que estávamos fazendo."
+                    <cite>— Margaret Hamilton</cite>
+                </blockquote>
+            </section>
+
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p><strong>Desenvolvido por:</strong> João Victor</p>
+            <p><strong>Contato:</strong> joaovictor@gmail.com | (43) 9959-9769</p>
+            <p class="local">Manoel Ribas - Paraná</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
